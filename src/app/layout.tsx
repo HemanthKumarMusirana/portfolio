@@ -32,10 +32,11 @@ export const metadata: Metadata = {
   publisher: 'Musirana Hemanth Kumar',
   icons: {
     icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
       { url: '/favicon.png', type: 'image/png' },
       { url: '/icon.png', type: 'image/png' }
     ],
-    shortcut: '/favicon.png',
+    shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
   alternates: {
@@ -123,7 +124,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta property="og:image" content="https://hemanthkumarmusirana.me/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
