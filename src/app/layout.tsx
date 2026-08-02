@@ -30,6 +30,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'Musirana Hemanth Kumar', url: 'https://hemanthkumarmusirana.me' }],
   creator: 'Musirana Hemanth Kumar',
   publisher: 'Musirana Hemanth Kumar',
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/icon.png', type: 'image/png' }
+    ],
+    shortcut: '/favicon.png',
+    apple: '/apple-touch-icon.png',
+  },
   alternates: {
     canonical: 'https://hemanthkumarmusirana.me',
   },
@@ -40,12 +48,21 @@ export const metadata: Metadata = {
     title: "HemanthKumarMusirana's | Portfolio",
     description: 'Portfolio of Musirana Hemanth Kumar — Computer Science Student specializing in AI, Backend Development, Cloud Engineering, and DevOps.',
     siteName: "HemanthKumarMusirana's | Portfolio",
+    images: [
+      {
+        url: 'https://hemanthkumarmusirana.me/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: "HemanthKumarMusirana's | Portfolio",
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "HemanthKumarMusirana's | Portfolio",
     description: 'Portfolio of Musirana Hemanth Kumar — Computer Science Student specializing in AI, Backend Development, Cloud Engineering, and DevOps.',
     creator: '@Hemanth_753',
+    images: ['https://hemanthkumarmusirana.me/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -76,6 +93,7 @@ const jsonLd = {
       '@id': 'https://hemanthkumarmusirana.me/#person',
       name: 'Musirana Hemanth Kumar',
       url: 'https://hemanthkumarmusirana.me',
+      image: 'https://hemanthkumarmusirana.me/og-image.jpg',
       jobTitle: 'Backend Developer & Cloud Engineer',
       almaMater: 'Siddartha Institute Of Science And Technology',
       sameAs: [
@@ -105,6 +123,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta property="og:image" content="https://hemanthkumarmusirana.me/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="twitter:image" content="https://hemanthkumarmusirana.me/og-image.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
