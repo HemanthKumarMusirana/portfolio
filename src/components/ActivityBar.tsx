@@ -28,12 +28,11 @@ export default function ActivityBar() {
 
   return (
     <div className="flex h-full w-[48px] shrink-0 flex-col items-center justify-between bg-[#333333] py-2 border-r border-[#252526] select-none z-20 relative">
-      {/* Toast */}
-      {downloadMsg && (
-        <div className="absolute left-14 bottom-4 bg-[#007acc] text-white text-[11px] px-3 py-1.5 rounded shadow-lg whitespace-nowrap z-50">
-          Downloading Hemanth_Kumar_Resume.pdf...
-        </div>
-      )}
+        {downloadMsg && (
+          <div className="absolute left-14 bottom-4 bg-[#007acc] text-white text-[11px] px-3 py-1.5 rounded shadow-lg whitespace-nowrap z-50">
+            Downloading HemanthKumarMusirana_s_Resume.pdf...
+          </div>
+        )}
 
       <div className="flex flex-col w-full items-center">
         <div 
@@ -85,8 +84,8 @@ export default function ActivityBar() {
         </div>
         
         <a 
-          href="/Hemanth_Kumar_Resume.pdf" 
-          download="Hemanth_Kumar_Resume.pdf" 
+          href="/HemanthKumarMusirana_s_Resume.pdf" 
+          download="HemanthKumarMusirana_s_Resume.pdf" 
           title="Download Resume"
           onClick={handleDownload}
           className={`cursor-pointer text-[24px] relative w-full flex justify-center py-3 transition-colors text-[#858585] hover:text-[#ffffff]`}

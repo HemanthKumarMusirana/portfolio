@@ -277,7 +277,7 @@ Instagram: https://www.instagram.com/hemanth_k_musirana/`);
         window.open('https://www.instagram.com/hemanth_k_musirana/', '_blank');
         addTerminalHistory('Opened Instagram in a new tab.');
       } else if (cmd === 'resume') {
-        window.open('/Hemanth_Kumar_Resume.pdf', '_blank');
+        window.open('/HemanthKumarMusirana_s_Resume.pdf', '_blank');
         addTerminalHistory('Downloading / Opening Resume PDF...');
       } else if (cmd === 'neofetch') {
         addTerminalHistory(`                   .--.
