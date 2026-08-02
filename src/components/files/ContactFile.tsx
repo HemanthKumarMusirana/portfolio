@@ -1,9 +1,10 @@
 'use client';
 import { motion, Variants } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaCode, FaInstagram } from 'react-icons/fa';
+import { FaGlobe, FaEnvelope, FaLinkedin, FaGithub, FaCode, FaInstagram } from 'react-icons/fa';
 import React from 'react';
 
 const socialLinks = [
+  { platform: "Website", url: "hemanthkumarmusirana.me", href: "https://hemanthkumarmusirana.me", icon: FaGlobe, color: "#10b981" },
   { platform: "Email", url: "hemanthdev753@gmail.com", href: "mailto:hemanthdev753@gmail.com", icon: FaEnvelope, color: "#4fc1ff" },
   { platform: "LinkedIn", url: "linkedin.com/in/hemanth-kumar-musirana-918857226", href: "https://www.linkedin.com/in/hemanth-kumar-musirana-918857226/", icon: FaLinkedin, color: "#0077b5" },
   { platform: "GitHub", url: "github.com/HemanthKumarMusirana", href: "https://github.com/HemanthKumarMusirana", icon: FaGithub, color: "#d4d4d4" },

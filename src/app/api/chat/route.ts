@@ -101,7 +101,7 @@ Only output ONE tag per response.`;
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'http://localhost:3000',
+        'HTTP-Referer': 'https://hemanthkumarmusirana.me',
         'X-Title': 'Musirana Hemanth Kumar VS Code Portfolio',
       },
       body: JSON.stringify({

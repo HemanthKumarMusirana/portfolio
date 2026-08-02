@@ -254,9 +254,10 @@ Learning     : [██████████] 100%`);
       } else if (cmd === 'quote') {
         addTerminalHistory(`Curious enough to learn.
 Determined enough to build.`);
-      } else if (cmd === 'contact') {
+      } else if (cmd === 'contact' || cmd === 'website' || cmd === 'portfolio') {
         useStore.getState().openFile('contact.ts');
-        addTerminalHistory(`Email    : hemanthdev753@gmail.com
+        addTerminalHistory(`Website  : https://hemanthkumarmusirana.me
+Email    : hemanthdev753@gmail.com
 LinkedIn : https://www.linkedin.com/in/hemanth-kumar-musirana-918857226/
 GitHub   : https://github.com/HemanthKumarMusirana
 LeetCode : https://leetcode.com/u/Hemanth_753/
